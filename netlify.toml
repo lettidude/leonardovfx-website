@@ -1,7 +1,8 @@
 [build]
-  command = "pnpm install && pnpm build"
+  command = "pnpm install && pnpm build && mkdir -p dist/public && cp -r ../dist/public/* dist/public/ 2>/dev/null || true"
   publish = "dist/public"
   functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "22"
+
