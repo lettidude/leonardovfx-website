@@ -70,11 +70,11 @@ export default function ChatButtonNetlify() {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 group"
+          className="fixed bottom-8 right-8 z-50 group"
           aria-label="Open chat"
         >
           <div className="relative">
-            <div className="w-16 h-16 rounded-full border-2 border-pink-500 overflow-hidden shadow-lg transition-transform group-hover:scale-110">
+            <div className="w-24 h-24 rounded-full border-2 border-pink-500 overflow-hidden shadow-lg transition-transform group-hover:scale-110">
               <img
                 src="/chat-avatar.png"
                 alt="Chat with Leonardo"
@@ -160,7 +160,7 @@ export default function ChatButtonNetlify() {
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Ask about Leonardo's work..."
                 disabled={isLoading}
-                className="flex-1"
+                className="flex-1 text-gray-900"
               />
               <Button type="submit" disabled={isLoading || !input.trim()} size="icon">
                 <Send className="h-4 w-4" />
