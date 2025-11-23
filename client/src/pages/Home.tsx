@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Mail, Phone, Linkedin } from "lucide-react";
+import ChatButton from "@/components/ChatButtonNetlify";
 
 export default function Home() {
   const [activeCarouselIndex, setActiveCarouselIndex] = useState(0);
@@ -675,6 +676,7 @@ export default function Home() {
           © LEONARDOVFX — Registered in England and Wales — Eligible to Work in the UK.
         </p>
       </footer>
+      <ChatButton />
     </div>
   );
 }
