@@ -118,7 +118,7 @@ export default function ChatButtonNetlify() {
           </div>
 
           {/* Messages */}
-          <ScrollArea className="flex-1 p-4" ref={scrollRef}>
+          <ScrollArea className="flex-1 p-4 max-h-[350px] overflow-y-auto" ref={scrollRef}>
             <div className="space-y-4">
               {messages.map((msg, idx) => (
                 <div
